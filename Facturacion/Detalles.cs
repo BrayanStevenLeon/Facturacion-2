@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Facturacion
 {
-    public partial class Detalles : Form
+    public partial class txb_cantidad : Form
     {
-        public Detalles()
+        public txb_cantidad()
         {
             InitializeComponent();
         }

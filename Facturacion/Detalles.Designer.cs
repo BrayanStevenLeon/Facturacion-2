@@ -1,6 +1,6 @@
 ﻿namespace Facturacion
 {
-    partial class Detalles
+    partial class txb_cantidad
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,6 @@
             this.id_producto = new System.Windows.Forms.Label();
             this.txt_producto = new System.Windows.Forms.TextBox();
             this.cantidad = new System.Windows.Forms.Label();
-            this.cmb_cantidad = new System.Windows.Forms.ComboBox();
             this.precio_unitario = new System.Windows.Forms.Label();
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.descuento = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.btn_cerrar = new System.Windows.Forms.Label();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -98,14 +98,6 @@
             this.cantidad.Size = new System.Drawing.Size(75, 17);
             this.cantidad.TabIndex = 9;
             this.cantidad.Text = "CANTIDAD";
-            // 
-            // cmb_cantidad
-            // 
-            this.cmb_cantidad.FormattingEnabled = true;
-            this.cmb_cantidad.Location = new System.Drawing.Point(250, 192);
-            this.cmb_cantidad.Name = "cmb_cantidad";
-            this.cmb_cantidad.Size = new System.Drawing.Size(144, 21);
-            this.cmb_cantidad.TabIndex = 10;
             // 
             // precio_unitario
             // 
@@ -185,11 +177,19 @@
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
             // 
-            // Detalles
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(250, 192);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(144, 20);
+            this.textBox1.TabIndex = 18;
+            // 
+            // txb_cantidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 563);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.btn_cerrar);
@@ -197,7 +197,6 @@
             this.Controls.Add(this.descuento);
             this.Controls.Add(this.txt_precio);
             this.Controls.Add(this.precio_unitario);
-            this.Controls.Add(this.cmb_cantidad);
             this.Controls.Add(this.cantidad);
             this.Controls.Add(this.txt_producto);
             this.Controls.Add(this.id_producto);
@@ -205,7 +204,7 @@
             this.Controls.Add(this.id_pedido);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Detalles";
+            this.Name = "txb_cantidad";
             this.Text = "Detalles";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -220,7 +219,6 @@
         private System.Windows.Forms.Label id_producto;
         private System.Windows.Forms.TextBox txt_producto;
         private System.Windows.Forms.Label cantidad;
-        private System.Windows.Forms.ComboBox cmb_cantidad;
         private System.Windows.Forms.Label precio_unitario;
         private System.Windows.Forms.TextBox txt_precio;
         private System.Windows.Forms.Label descuento;
@@ -228,5 +226,6 @@
         private System.Windows.Forms.Label btn_cerrar;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

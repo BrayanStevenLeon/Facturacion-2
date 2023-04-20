@@ -49,7 +49,7 @@ namespace Facturacion
 
         private void btn_detalles_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Detalles());
+            AbrirFormInPanel(new txb_cantidad());
         }
 
         private void btn_productos_Click(object sender, EventArgs e)

@@ -34,10 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
-            this.txt_FormaPago = new System.Windows.Forms.TextBox();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Label();
+            this.cmb_pago = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -95,13 +95,6 @@
             this.txt_nombre.Size = new System.Drawing.Size(144, 20);
             this.txt_nombre.TabIndex = 22;
             // 
-            // txt_FormaPago
-            // 
-            this.txt_FormaPago.Location = new System.Drawing.Point(277, 212);
-            this.txt_FormaPago.Name = "txt_FormaPago";
-            this.txt_FormaPago.Size = new System.Drawing.Size(144, 20);
-            this.txt_FormaPago.TabIndex = 23;
-            // 
             // btn_guardar
             // 
             this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
@@ -146,15 +139,36 @@
             this.btn_cerrar.Text = "X";
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
+            // cmb_pago
+            // 
+            this.cmb_pago.AutoCompleteCustomSource.AddRange(new string[] {
+            "Tarjeta credito",
+            "Tarjeta debito",
+            "Efectivo",
+            "Transferencia bancaria"});
+            this.cmb_pago.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmb_pago.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_pago.FormattingEnabled = true;
+            this.cmb_pago.Items.AddRange(new object[] {
+            "Tarjeta de credito\t",
+            "Tarjeta de debito",
+            "Efectivo",
+            "Transferencia bancaria"});
+            this.cmb_pago.Location = new System.Drawing.Point(277, 212);
+            this.cmb_pago.Name = "cmb_pago";
+            this.cmb_pago.Size = new System.Drawing.Size(144, 25);
+            this.cmb_pago.TabIndex = 33;
+            this.cmb_pago.Text = "forma de pago";
+            // 
             // Pago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 563);
+            this.Controls.Add(this.cmb_pago);
             this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_guardar);
-            this.Controls.Add(this.txt_FormaPago);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -177,9 +191,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_nombre;
-        private System.Windows.Forms.TextBox txt_FormaPago;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Label btn_cerrar;
+        private System.Windows.Forms.ComboBox cmb_pago;
     }
 }
